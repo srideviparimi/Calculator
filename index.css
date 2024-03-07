@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif ; 
+    font-weight: normal;
+    border-radius: 10px;
+    box-shadow: 50px;   
+}
+
+body{
+    padding:0;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calci{
+    min-width: fit-content;
+    max-width: fit-content;
+    background-color: rgb(117, 117, 112);
+    padding:1px;
+    border:2px solid black;
+}
+
+.output{
+    display:grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(5, 80px) minmax(80px, auto);
+    padding:30px;    
+}
+
+.output>button{
+    cursor: pointer;
+    background-color: rgba(230, 230, 215, 0.7);
+    font-size: 22px;
+    margin: 5px;
+}
+
+.output>button:hover{
+    cursor:pointer;
+    background-color: rgb(255,255,255,0.8);
+}
+
+.display{
+    background-color: black;
+    grid-column: 1/-1;
+    display:flex;
+    align-content: left;
+    justify-content: center;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand{
+    color: rgba(190, 167, 167, 0.8);
+    font-size: 20px;
+    text-align: right;  
+}
+
+.current-operand{
+    color: rgba(249, 247, 247, 0.8);
+    font-size:30px;
+    text-align:right;
+}
+
+#equalsbtn{
+    grid-column: 3/-1;
+}
+
+#clearbutton{
+    background-color: brown;
+}
