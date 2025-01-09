@@ -15,25 +15,25 @@
             <div  data-current-operand class = "current-operand"id="result"></div>
         </div>
         <button data-allclear value="C" onclick="allclear()" id="clearbutton">AC</button>
-        <button data-delete value="D" onclick="del()">DEL</button>
-        <button data-operation value="%"onclick="display('%')">%</button>
-        <button data-operation value="/" onclick="display('/')">/</button>
-        <button data-number value="1" onclick="display('1')">1</button>
-        <button data-number value="2"onclick="display('2')">2</button>
-        <button data-number value="3"onclick="display('3')">3</button>
-        <button data-operation value="*" onclick="display('*')">*</button>
-        <button data-number value="4"onclick="display('4')">4</button>
-        <button data-number value="5"onclick="display('5')">5</button>
-        <button data-number value="6"onclick="display('6')">6</button>
-        <button data-operation value="+"onclick="display('+')">+</button>
-        <button data-number value="7"onclick="display('7')">7</button>
-        <button data-number value="8"onclick="display('8')">8</button>
-        <button data-number value="9"onclick="display('9')">9</button>
-        <button data-operation value="-"onclick="display('-')">-</button>
-        <button data-number value="."onclick="display('.')">.</button>
-        <button data-number value="0"onclick="display('0')"> 0</button>
+        <button data-delete value="D" onclick="del()" class="first">DEL</button>
+        <button data-operation value="%"onclick="display('%')"  class="first">%</button>
+        <button data-operation value="/" onclick="display('/')"  class="first">/</button>
+        <button data-number value="1" onclick="display('1')" class="second">1</button>
+        <button data-number value="2"onclick="display('2')" class="second">2</button>
+        <button data-number value="3"onclick="display('3')" class="second">3</button>
+        <button data-operation value="*" onclick="display('*')" class="second">*</button>
+        <button data-number value="4"onclick="display('4')" class="third">4</button>
+        <button data-number value="5"onclick="display('5')" class="third">5</button>
+        <button data-number value="6"onclick="display('6')" class="third">6</button>
+        <button data-operation value="+"onclick="display('+')" class="third">+</button>
+        <button data-number value="7"onclick="display('7')" class="fourth">7</button>
+        <button data-number value="8"onclick="display('8')"class="fourth">8</button>
+        <button data-number value="9"onclick="display('9')"class="fourth">9</button>
+        <button data-operation value="-"onclick="display('-')"class="fourth">-</button>
+        <button data-number value="."onclick="display('.')" class="fifth">.</button>
+        <button data-number value="0"onclick="display('0')" class="fifth"> 0</button>
         
-        <button data-equals value="=" id="equalsbtn" onclick="compute()" >=</button>
+        <button data-equals value="=" id="equalsbtn" onclick="compute()" class="fifth">=</button>
     </div>
 </div>
 </body>

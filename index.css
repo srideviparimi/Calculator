@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family:Georgia, 'Times New Roman', Times, serif ; 
     font-weight: normal;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 50px;   
 }
 
@@ -17,9 +17,9 @@ body{
 .calci{
     min-width: fit-content;
     max-width: fit-content;
-    background-color: rgb(117, 117, 112);
+    background-color: rgb(164, 210, 235);
     padding:1px;
-    border:2px solid black;
+    border:2px solid rgb(106, 192, 239);
 }
 
 .output{
@@ -34,18 +34,32 @@ body{
 
 .output>button{
     cursor: pointer;
-    background-color: rgba(230, 230, 215, 0.7);
+    border:none;
     font-size: 22px;
     margin: 5px;
 }
-
+.first{
+    background-color: rgb(250, 137, 92);
+}
+.second{
+    background-color: rgb(178, 234, 171);
+}
+.third{
+    background-color: rgb(244, 250, 160);
+}
+.fourth{
+    background-color: rgb(250, 220, 230);
+}
+.fifth{
+    background-color: rgb(240, 162, 188);
+}
 .output>button:hover{
     cursor:pointer;
     background-color: rgb(255,255,255,0.8);
 }
 
 .display{
-    background-color: black;
+    background-color: rgb(219, 215, 215);
     grid-column: 1/-1;
     display:flex;
     align-content: left;
@@ -56,13 +70,13 @@ body{
 }
 
 .previous-operand{
-    color: rgba(190, 167, 167, 0.8);
+    color: rgba(90, 88, 88, 0.8);
     font-size: 20px;
     text-align: right;  
 }
 
 .current-operand{
-    color: rgba(249, 247, 247, 0.8);
+    color: rgba(37, 35, 35, 0.8);
     font-size:30px;
     text-align:right;
 }
